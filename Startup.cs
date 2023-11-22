@@ -11,14 +11,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Libreria_CESAR.Data;
+using Microsoft.EntityFrameworkCore;
+using Libreria_CESAR.Data.Services;
 
 namespace Libreria_CESAR
 {
     public class Startup
     {
+        public string ConnectionString {  get; set; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            ConnectionString = configuration.GetConnectionString("DefaultConnectionString");
         }
 
         public IConfiguration Configuration { get; }
@@ -28,6 +33,11 @@ namespace Libreria_CESAR
         {
 
             services.AddControllers();
+            //Configurar DBContext con SQL
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
+
+            //Configurar el servicio para que pueda ser usado
+            services.AddTransient<BooksService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Libreria_CESAR", Version = "v1" });
@@ -54,6 +64,7 @@ namespace Libreria_CESAR
             {
                 endpoints.MapControllers();
             });
+            AppDbInitialer.Seed(app);
         }
     }
 }
