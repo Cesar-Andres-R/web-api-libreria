@@ -38,6 +38,8 @@ namespace Libreria_CESAR
 
             //Configurar el servicio para que pueda ser usado
             services.AddTransient<BooksService>();
+            services.AddTransient<AuthorsService>();
+            services.AddTransient<PublishersService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Libreria_CESAR", Version = "v1" });
@@ -64,7 +66,7 @@ namespace Libreria_CESAR
             {
                 endpoints.MapControllers();
             });
-            AppDbInitialer.Seed(app);
+            //AppDbInitialer.Seed(app);
         }
     }
 }

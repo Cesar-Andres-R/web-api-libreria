@@ -3,8 +3,9 @@
     "",
     "\\Data",
     "\\Data\\Models",
-    "\\Data\\Services"
+    "\\Data\\Services",
+    "\\Data\\ViewModels"
   ],
-  "SelectedNode": "\\Data\\Services\\BooksService.cs",
+  "SelectedNode": "\\Data\\ViewModels\\BookVM.cs",
   "PreviewInSolutionExplorer": false
 }
