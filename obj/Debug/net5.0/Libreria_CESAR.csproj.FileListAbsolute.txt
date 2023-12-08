@@ -63,3 +63,5 @@ C:\Users\prueb\Desktop\API_MIGUEL\Libreria_CESAR\obj\Debug\net5.0\refint\Libreri
 C:\Users\prueb\Desktop\API_MIGUEL\Libreria_CESAR\obj\Debug\net5.0\Libreria_CESAR.pdb
 C:\Users\prueb\Desktop\API_MIGUEL\Libreria_CESAR\obj\Debug\net5.0\Libreria_CESAR.genruntimeconfig.cache
 C:\Users\prueb\Desktop\API_MIGUEL\Libreria_CESAR\obj\Debug\net5.0\ref\Libreria_CESAR.dll
+C:\Users\prueb\Desktop\API_MIGUEL\Libreria_CESAR\bin\Debug\net5.0\BouncyCastle.Cryptography.dll
+C:\Users\prueb\Desktop\API_MIGUEL\Libreria_CESAR\bin\Debug\net5.0\DocuSign.eSign.dll

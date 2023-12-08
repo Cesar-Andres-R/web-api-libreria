@@ -12,9 +12,11 @@ namespace Libreria_CESAR.Data.Models
         public DateTime? DateRead { get; set; }
         public int? Rate { get; set; }
         public string Genero { get; set; }
-        public string Autor {  get; set; }
         public string CovertUrl { get; set; }
         public DateTime DateAdded { get; set; }
+
+
+        //TE QUEDASTE EN EL MINUTO 10:00 EN EL SEGUNDO VIDEO
 
 
         //Propiedades de navegacion (en esta parte es donde "mapeamos")

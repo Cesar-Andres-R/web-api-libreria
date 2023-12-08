@@ -41,9 +41,6 @@ namespace Libreria_CESAR.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Autor")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("CovertUrl")
                         .HasColumnType("nvarchar(max)");
 

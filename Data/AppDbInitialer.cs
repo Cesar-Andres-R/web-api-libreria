@@ -27,7 +27,6 @@ namespace Libreria_CESAR.Data
                         DateRead = DateTime.Now.AddDays(-10),
                         Rate = 4,
                         Genero = "Biography",
-                        Autor = "1st Author",
                         CovertUrl = "https...",
                         DateAdded = DateTime.Now,
                     },
@@ -38,7 +37,6 @@ namespace Libreria_CESAR.Data
                         Descripcion = "2nd Book Description",
                         IsRead = true,
                         Genero = "Biography",
-                        Autor = "2nd Author",
                         CovertUrl = "https...",
                         DateAdded = DateTime.Now,
                     });

@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\Data\\Models",
-    "\\Data\\Services",
-    "\\Data\\ViewModels"
+    "\\Data\\ViewModels",
+    "\\Exceptions"
   ],
-  "SelectedNode": "\\Data\\ViewModels\\BookVM.cs",
+  "SelectedNode": "\\Exceptions\\PublisherNameException.cs",
   "PreviewInSolutionExplorer": false
 }
